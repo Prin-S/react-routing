@@ -4,7 +4,14 @@ function Spinach() {
     return (
         <>
             <p>Hi, I am Spinach! Popeye loves to eat me!</p>
-            <Link to="/">Click here to go back</Link>
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/profile">Profile</Link>
+                </li>
+            </ul>
         </>
     );
 }

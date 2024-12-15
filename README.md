@@ -1,3 +1,3 @@
-# vite-template
+# react-routing
 
-A Vite template
+For https://www.theodinproject.com/lessons/node-path-react-new-react-router

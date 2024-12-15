@@ -4,7 +4,14 @@ function Popeye() {
     return (
         <>
             <p>Hi, I am Popeye! I love to eat Spinach!</p>
-            <Link to="/">Click here to go back</Link>
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/profile">Profile</Link>
+                </li>
+            </ul>
         </>
     );
 }
