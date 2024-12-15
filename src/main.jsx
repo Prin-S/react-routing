@@ -3,24 +3,18 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { App } from './components/App.jsx';
 import { Profile } from './components/Profile.jsx';
-import { Default } from './components/Default.jsx';
-import { Popeye } from './components/Popeye.jsx';
-import { Spinach } from './components/Spinach.jsx';
+import { Error } from './components/Error.jsx';
 import './styles/index.css';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
   },
   {
-    path: "profile",
+    path: "profile/:name",
     element: <Profile />,
-    children: [
-      { index: true, element: <Default /> },
-      { path: "spinach", element: <Spinach /> },
-      { path: "popeye", element: <Popeye /> },
-    ],
   },
 ]);
 
